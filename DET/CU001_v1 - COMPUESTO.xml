@@ -1,0 +1,58 @@
+	<?xml version="1.0" encoding="UTF-8"?>
+	<SERVICIO>
+		<PARAMETROS>
+			<NOMBRE>Consulta de camapañas</NOMBRE>	
+			<AUDITA>S</AUDITA>
+			<CORREO1>user01@cajaarequipa.pe</CORREO1>
+			<CORREO2>user01@cajaarequipa.pe</CORREO2>
+			<CORREO3>user01@cajaarequipa.pe</CORREO3>
+			<CORREO4>user01@cajaarequipa.pe</CORREO4>
+			<CORREO5>user01@cajaarequipa.pe</CORREO5>
+			<NOTIFICA>S</NOTIFICA>
+			<NVLAUDIT>11111</NVLAUDIT>
+			<RETRY>N</RETRY>		
+			<DELAY>0</DELAY>
+			<NRORETRY>0</NRORETRY>		
+			<EQUIVRES>N</EQUIVRES>
+			<MONITOR>S</MONITOR>
+			<!--Cualquier parametro que un servicio requiera-->
+			<PARAMETRO1>AAA</PARAMETRO1>
+			<PARAMETRO2>BBB</PARAMETRO2>
+			<PARAMETRO3>CCC</PARAMETRO3>
+			<!--Configuracion de llamadas de servicios especificos-->
+			<SERVICIOS_ESPECIFICOS>
+				<SERVICIO NRO="01" CODIGO="CU001" VERSION="v1" TIMEOUTENVIO="15" TIPOENVIO="SIN">
+					<AUDITA>S</AUDITA>
+					<TIMEOUT>10</TIMEOUT>
+					<NVLAUDIT>01101</NVLAUDIT>
+				</SERVICIO>
+				<SERVICIO NRO="02" CODIGO="TA001" VERSION="v2" TIMEOUTENVIO="5" TIPOENVIO="ASI" PERSISTENTE="S">
+					<TIMEOUT>15</TIMEOUT>
+					<RETRY>S</RETRY>	
+					<NRORETRY>3</NRORETRY>					
+					<DELAY>3600</DELAY>
+				</SERVICIO>
+			</SERVICIOS_ESPECIFICOS>
+		</PARAMETROS>
+		<EQUIVALENCIAS>
+			<!--
+			VALOR: Codigo de respuesta devuelto por el backend
+			CODEQV: Codigo equivalente que sera devuelto al cliente
+			DESEQV: Descripcion equivalente que sera devuelto al cliente
+			TIPO:
+				0: Codigos de exito
+				1: Codigos de error
+			ACCION: 
+				01: Reintentar
+				02: Descartar (No reenviar)
+				03: Notificar';
+			-->
+			<CODRES VALOR="0" TIPO="0" CODEQV="00" DESEQV="Exitoso"/>
+			<CODRES VALOR="10" TIPO="0" CODEQV="00" DESEQV="Proceso se realizara en un hora"/>
+			<CODRES VALOR="-2" TIPO="1" CODEQV="ERR01" DESEQV="No se puedo realizar la operación" ACCION="03"/>
+			<CODRES VALOR="-3" TIPO="1" CODEQV="ERR02" DESEQV="Proceso sera procesado" ACCION="01"/>
+			<CODRES VALOR="-4" TIPO="1" CODEQV="ERR03" DESEQV="Cliente no tiene saldo" ACCION="02"/>
+		</EQUIVALENCIAS>
+	</SERVICIO>
+
+

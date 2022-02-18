@@ -1,0 +1,61 @@
+{
+   "PARAMETROS": {
+      "NOMBRE": "Nombre del servicio",
+      "AUDITA": "S",
+      "CORREO": "user01@unibanca.pe",
+      "NOTIFICA": "S",
+      "NVLAUDIT": "11111",
+      "RETRY": "N",
+      "DELAY": "0",
+      "NRORETRY": "0",
+      "EQUIVRES": "N",
+      "MONITOR": "S",
+      "TIMEOUT": "15",
+      "URLDEST": "http://serverBack:80/servicio/operacion",
+      "METODO": "urn:add",
+      "PROTOCOLO": "HTTP",
+      "PARAMETRO1": "AAA",
+      "PARAMETRO2": "BBB",
+      "PARAMETRO3": "CCC"
+   },
+   "EQUIVALENCIAS": [
+      {
+         "VALOR": "0",
+         "TIPO": "0",
+         "CODEQV": "00",
+         "DESEQV": "Exitoso"
+      },
+      {
+         "VALOR": "10",
+         "TIPO": "0",
+         "CODEQV": "00",
+         "DESEQV": "Proceso se realizara en un hora"
+      },
+      {
+         "VALOR": "-2",
+         "TIPO": "1",
+         "CODEQV": "ERR01",
+         "DESEQV": "No se puedo realizar la operación",
+         "ACCION": "03"
+      },
+      {
+         "VALOR": "-3",
+         "TIPO": "1",
+         "CODEQV": "ERR02",
+         "DESEQV": "Proceso sera procesado",
+         "ACCION": "01"
+      },
+      {
+         "VALOR": "-4",
+         "TIPO": "1",
+         "CODEQV": "ERR03",
+         "DESEQV": "Cliente no tiene saldo",
+         "ACCION": "02"
+      }
+   ]
+}
+
+
+
+
+
