@@ -1,6 +1,6 @@
 {
    "PARAMETROS": {
-      "NOMBRE": "Nombre del servicio",
+      "NOMBRE": "Servicio A0001",
       "AUDITA": "S",
       "CORREO": "user01@unibanca.pe",
       "NOTIFICA": "S",
@@ -9,11 +9,10 @@
       "DELAY": "0",
       "NRORETRY": "0",
       "EQUIVRES": "N",
-      "MONITOR": "S",
       "TIMEOUT": "15",
-      "URLDEST": "http://serverBack:80/servicio/operacion",
-      "METODO": "urn:add",
-      "PROTOCOLO": "HTTP",
+      "DATAQUEUE": "XXXXX",
+	  "OUTPUTQUEUE" "ACE.GEN.OUTPUTAS400.REQ.01"
+      "PROTOCOLO": "AS400",
       "PARAMETRO1": "AAA",
       "PARAMETRO2": "BBB",
       "PARAMETRO3": "CCC"
@@ -30,27 +29,6 @@
          "TIPO": "0",
          "CODEQV": "00",
          "DESEQV": "Proceso se realizara en un hora"
-      },
-      {
-         "VALOR": "-2",
-         "TIPO": "1",
-         "CODEQV": "ERR01",
-         "DESEQV": "No se puedo realizar la operación",
-         "ACCION": "03"
-      },
-      {
-         "VALOR": "-3",
-         "TIPO": "1",
-         "CODEQV": "ERR02",
-         "DESEQV": "Proceso sera procesado",
-         "ACCION": "01"
-      },
-      {
-         "VALOR": "-4",
-         "TIPO": "1",
-         "CODEQV": "ERR03",
-         "DESEQV": "Cliente no tiene saldo",
-         "ACCION": "02"
       }
    ]
 }

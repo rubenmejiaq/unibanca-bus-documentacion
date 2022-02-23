@@ -8,4 +8,4 @@ var client = dgram.createSocket("udp4");
  
 // Client sending message to server
 // by using send() method
-client.send("Hello", 0, 7, 1234, "localhost");
+client.send("1234XXXXXXXXXXXXXXX", 0, 7, 8005, "192.168.1.16");
