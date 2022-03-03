@@ -1,0 +1,54 @@
+{
+  "instituciones": [
+    {
+      "nombre": "SCOTIABANK",
+      "bitmap": "F23E4581AEE1B4000000000000000080"
+    }
+  ],
+  "servicios": [
+    {
+      "codigo": "A0001",
+      "nombre": "SIMULADOR",
+      "prcodes": [
+        "880057",
+        "880058",
+        "880059",
+        "880077",
+        "880078",
+        "880079"
+      ]
+    },
+    {
+      "codigo": "A0002",
+      "nombre": "CONSULTA DE ULTIMOS MOVIMIENTOS",
+      "prcodes": [
+        "39XXXX"
+      ]
+    },
+    {
+      "codigo": "A0003",
+      "nombre": "PAGOS TC",
+      "prcodes": [
+        "870000",
+        "87XX68"
+      ]
+    },
+    {
+      "codigo": "A0004",
+      "nombre": "PAGOS DE SERVICIOS",
+      "prcodes": [
+        "009000"
+      ]
+    },
+    {
+      "codigo": "A0005",
+      "nombre": "RETIRO",
+      "prcodes": [
+        "019000",
+        "019066",
+        "019067",
+        "019068"
+      ]
+    }
+  ]
+}
