@@ -7,7 +7,7 @@
   ],
   "servicios": [
     {
-      "codigo": "A0001",
+      "codigo": "A0002",
       "nombre": "SIMULADOR",
       "prcodes": [
         "880057",
@@ -19,14 +19,14 @@
       ]
     },
     {
-      "codigo": "A0002",
+      "codigo": "A0003",
       "nombre": "CONSULTA DE ULTIMOS MOVIMIENTOS",
       "prcodes": [
         "39XXXX"
       ]
     },
     {
-      "codigo": "A0003",
+      "codigo": "A0001",
       "nombre": "PAGOS TC",
       "prcodes": [
         "870000",
